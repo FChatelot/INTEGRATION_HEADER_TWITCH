@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/norm.css">
+    <script src="./JS/intégration.js" defer></script>
+    <!--Intégration du Header Twitch afin d'auto tester mes connaissances en Javascript-->
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="head">
+            <div class="container">
+                <nav>
+                        <div class="bigdaddy">
+                            <img src="./SVG/twitch.svg" class= "logo" alt="twitch">           
+                            <div class="parcours">
+                                Parcourir
+                            </div>
+
+                            <!--premier Modal-->
+                            <!--Ouvrir le Modal au clic-->
+                            
+                            <button title="Plus" class="bouton daddy">
+                                <div class="bebou"></div>
+                                <div class="bebou"></div>
+                                <div class="bebou"></div>
+                            </button>
+                            
+                                <div class="modal modalPlus">
+
+                                    <!-- Modal content -->
+                                    <div class="modalPlus-content">
+                                        <div class="mom">
+                                            Général
+                                        </div>
+                                        <a href="https://www.google.fr">à propos</a>
+                                        <a href="#">annonceurs</a>
+                                        <a href="#">loot Cave - Boutique de produits dérivés</a>
+                                        
+                                        <div class="separator"></div>
+                                        
+                                        <div class="mom">
+                                            Aide et juridique
+                                        </div>
+                                        <a href="#">aide</a>
+                                        <a href="#">choix publicitaires</a>
+                                    </div>
+                                  
+                                </div>
+                            
+                        </div>
+
+                    <!--SearchBar-->
+                    <div class="search">
+                        <input type="text" placeholder="Rechercher">
+                        <button><img src="./SVG/search.svg" class="sizelogo" alt="search"></button>
+                    </div>
+                    <!--Partie droite du Header-->
+                        <div class="bigdaddy2">
+                                <!--Boutton Crown-->
+                            <button class="bouton2 invisible">
+                                <img title="Cadeaux Prime" src="./SVG/crown.svg" class="crown" alt="">
+                            </button>
+                                    <div class="popup">
+                                        <div class="giftHead">
+                                            <div class="ghleft"></div>
+                                            <div class="ghmid"><h2>Cadeaux Prime Gaming</h2></div>                        
+                                            <div class="ghright">
+                                                <button class="close invisible">
+                                                    <img src="./SVG/cross.svg" class="cross">
+                                                </button>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="giftBody">
+                                            <div class="insideGB">
+                                                <h3>Obtenir avec Prime Gaming</h3>
+                                                <div class="giftPrime">
+                                                    <img src="./SVG/prime.svg" class="prime">
+                                                </div>
+                                                <p>Soutenez votre diffuseur préféré et bénéficiez tous les mois de jeux et de cadeaux en jeu, de vidéo et bien plus encore avec Prime Gaming.</p>
+                                                <div class="linkPrime">
+                                                    <a href="#" class="join">Commencez votre essai gratuit</a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="wrapPrime">
+                                                <div class="wrapTab">
+                                                    <button class="tab-button" data-id="PrimeAll" >All</button>
+                                                    <button class="tab-button" data-id="PrimeWeekly">Weekly Free Game</button>
+                                                    <button class="tab-button" data-id="PrimeEnding">Ending Soon</button>
+                                                </div>
+                                                <div class="wrapContent">
+                                                    <div class="wrappedContent active" id="PrimeAll">
+                                                        <div class="miniwrap">
+                                                            <p>Honkai:StarRail</p>
+                                                            <h4>Pack Prime Gaming #2</h4>
+                                                            <img src="" alt="">
+                                                            <p>Contenu In Game</p>
+                                                            <p>HoYoverse</p>
+                                                            <div class="linkPrime">
+                                                                <a href="#" class="join">Commencez votre essai gratuit</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrappedContent" id="PrimeWeekly">
+                                                        <div class="miniwrap">
+                                                            <p>dofus</p>
+                                                            <h4>Pack Prime Wololo</h4>
+                                                            <img src="" alt="">
+                                                            <p>Contenu In Game</p>
+                                                            <p>Ankama</p>
+                                                            <div class="linkPrime">
+                                                                <a href="#" class="join">Commencez votre essai gratuit</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrappedContent" id="PrimeEnding">
+                                                        <div class="miniwrap">
+                                                            <p>destiny 2</p>
+                                                            <h4>Pack Engramme</h4>
+                                                            <img src="" alt="">
+                                                            <p>Contenu In Game</p>
+                                                            <p>Bungie</p>
+                                                            <div class="linkPrime">
+                                                                <a href="#" class="join">Commencez votre essai gratuit</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        
+                                        </div>
+                                    
+                                    
+                                    </div>
+
+                                
+                                <button class="leBoutonConnect connect">Se connecter</button>
+                                    <div class="modalusWrapus">
+                                        <div class="modalusConnectus">
+                                            <div class="wrapModalConnect">
+                                                <div class="oupas">
+                                                    <button class="closeConnect"><img src="./SVG/cross.svg" class="cross" alt=""></button>
+                                                </div>
+                                                
+                                                <div class="titleConnect">
+                                                    <div class="svgConnect">
+                                                        <img src="./SVG/twitch.svg" class="logo" alt="">
+                                                    </div>
+                                                    <h2>Se connecter à Twitch</h2>
+                                                </div>
+                                                <div class="formConnect">
+                                                    <form action="#" method="post">
+                                                        <label for="identifiant">Identifiant</label>
+                                                        <input type="text" id="identifiant" name="user_name"> 
+                                                        <label for="password">Mot de Passe</label>
+                                                        <input type="password" name="password" id="diPassword">
+                                                        <a href="#">Problèmes de connection ?</a>
+                                                        <button type="submit" class="submitModal"> Se Connecter</button>
+                                                        <a href="#">Pas de compte ? Inscrivez-vous</a>
+                                                    </form>
+                                                </div>
+                                                
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+                                <button class="bouton join">S'inscrire</button>
+
+                                <button class="bouton invisible">
+                                    <img src="/SVG/user.svg" class="user" alt="">
+                                </button>
+                                
+                        </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <article>
+
+    </article>
+    
+    <footer>
+
+    </footer>
+
+</body>
+</html>

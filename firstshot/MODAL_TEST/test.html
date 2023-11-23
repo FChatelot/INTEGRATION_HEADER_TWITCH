@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!--CETTE PAGE ME SERT DE TEST -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            display: none;
+        }
+        .content.is-visible{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<button class="openModal" id="modal1">Modal 1</button>
+<button class="openModal" id="modal2">Modal 2</button>
+<button class="openModal" id="modal3">Modal 3</button>
+
+<div class="content" data-id="modal1">
+    <span class="btn-close">&times;</span>
+    <div class="message">Bonjour</div>
+</div>
+
+<div class="content" data-id="modal2">
+    <span class="btn-close">&times;</span>
+    <div class="message">Nous sommes</div>
+</div>
+
+<div class="content" data-id="modal3">
+    <span class="btn-close">&times;</span>
+    <div class="message">EN LIVE</div>
+</div>
+
+<script>
+
+    const btnOpener = document.querySelectorAll(".openModal");
+    const contents = document.querySelectorAll(".content");
+    const closeButtons = document.querySelectorAll(".btn-close");
+
+
+btnOpener.forEach((btn, index) =>{
+    console.log(btn, index)
+    const currentId = btn.id;
+    console.log(currentId)
+   btn.addEventListener("click",function() {
+    contents[index].classList.toggle("is-visible");
+   })  
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
